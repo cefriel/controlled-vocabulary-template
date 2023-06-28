@@ -23,15 +23,15 @@ SetEnvIf Request_URI ^.*$ ROOT_URL=https://cefriel.github.io
 
 # Versioned vocabulary
 RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
-RewriteRule ^(.+)/([0-9].[0-9].[0-9])/?$ %{ENV:ROOT_URL}/$1/$2/$1.%{ENV:SYNTAX} [R=303,L]
+RewriteRule ^(.+)/([0-9].[0-9].[0-9])/?$ %{ENV:ROOT_URL}/$1/$1/$2/$1.%{ENV:SYNTAX} [R=303,L]
 
 # Latest vocabulary
 RewriteCond %{ENV:SYNTAX} ^(rdf|ttl|json|nt)$
-RewriteRule ^([^/]+)/?$ %{ENV:ROOT_URL}/$1/latest/$1.%{ENV:SYNTAX} [R=303,L]
+RewriteRule ^([^/]+)/?$ %{ENV:ROOT_URL}/$1/$1/latest/$1.%{ENV:SYNTAX} [R=303,L]
 
 # Vocabulary documentation
 RewriteCond %{ENV:SYNTAX} ^html$
-RewriteRule ^([^/]+)/?$ %{ENV:ROOT_URL}/$1/latest/index.html [R=303,L]
+RewriteRule ^([^/]+)/?$ %{ENV:ROOT_URL}/$1/$1/latest/index.html [R=303,L]
 
 # No serialisation available
 RewriteCond %{ENV:SYNTAX} ^other$
@@ -41,7 +41,7 @@ RewriteRule ^([^/]+)/?$ %{ENV:ROOT_URL}/$1/406.html [R=406,L]
 
 # Specification repo
 RewriteCond %{ENV:MARKER} ^other$
-RewriteRule ^.*$ https://github.com/cefriel/controlled-vocabulary-template [R=303,L]
+RewriteRule ^.*$ https://github.com/cefriel [R=303,L]
 
 # Default response
-RewriteRule ^.*$ https://github.com/cefriel/controlled-vocabulary-template [R=303,L]
+RewriteRule ^.*$ https://github.com/cefriel [R=303,L]
