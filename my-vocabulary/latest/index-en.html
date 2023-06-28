@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Template Controlled Vocabulary</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/my-namespace/my-vocabulary","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/my-namespace/my-vocabulary","name":"Template Controlled Vocabulary", "headline":"Template for generating a controlled vocabulary defined under a certain my-namespace.", "datePublished":"Tue Jun 27 18:48:58 CEST 2023", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Name Surname (Affiliation)"},{"@type":"Person","name":"OtherName OtherSurname (OtherAffiliation)"}], "contributor":[{"@type":"Person","name":"Name Surname (Affiliation)"},{"@type":"Person","name":"OtherName OtherSurname (OtherAffiliation)"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Template Controlled Vocabulary</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://w3id.org/my-namespace/my-vocabulary/1.0.0">https://w3id.org/my-namespace/my-vocabulary/1.0.0</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Authors:</dt>
+<dd>Name Surname (Affiliation)</dd><dd>OtherName OtherSurname (OtherAffiliation)</dd>
+
+<dt>Contributors:</dt>
+<dd>Name Surname (Affiliation)</dd><dd>OtherName OtherSurname (OtherAffiliation)</dd>
+
+<dt>Publisher:</dt>
+<dd>Publisher</dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Name Surname (Affiliation), OtherName OtherSurname (OtherAffiliation). Template Controlled Vocabulary. Revision: 1.0.0. Retrieved from: https://w3id.org/my-namespace/my-vocabulary/1.0.0</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+Template for generating a controlled vocabulary defined under a certain my-namespace.</span>
+</div>
+<div id="toc"></div>  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Template Controlled Vocabulary: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Named Individuals</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#/my-term-1"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-1">My Term 1</a>
+   </li>
+   <li>
+      <a href="#/my-term-10"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-10">My Term 10</a>
+   </li>
+   <li>
+      <a href="#/my-term-11"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-11">My Term 11</a>
+   </li>
+   <li>
+      <a href="#/my-term-12"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-12">My Term 12</a>
+   </li>
+   <li>
+      <a href="#/my-term-13"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-13">My Term 13</a>
+   </li>
+   <li>
+      <a href="#/my-term-14"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-14">My Term 14</a>
+   </li>
+   <li>
+      <a href="#/my-term-15"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-15">My Term 15</a>
+   </li>
+   <li>
+      <a href="#/my-term-16"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-16">My Term 16</a>
+   </li>
+   <li>
+      <a href="#/my-term-17"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-17">My Term 17</a>
+   </li>
+   <li>
+      <a href="#/my-term-18"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-18">My Term 18</a>
+   </li>
+   <li>
+      <a href="#/my-term-19"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-19">My Term 19</a>
+   </li>
+   <li>
+      <a href="#/my-term-2"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-2">My Term 2</a>
+   </li>
+   <li>
+      <a href="#/my-term-20"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-20">My Term 20</a>
+   </li>
+   <li>
+      <a href="#/my-term-21"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-21">My Term 21</a>
+   </li>
+   <li>
+      <a href="#/my-term-22"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-22">My Term 22</a>
+   </li>
+   <li>
+      <a href="#/my-term-23"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-23">My Term 23</a>
+   </li>
+   <li>
+      <a href="#/my-term-24"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-24">My Term 24</a>
+   </li>
+   <li>
+      <a href="#/my-term-3"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-3">My Term 3</a>
+   </li>
+   <li>
+      <a href="#/my-term-4"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-4">My Term 4</a>
+   </li>
+   <li>
+      <a href="#/my-term-5"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-5">My Term 5</a>
+   </li>
+   <li>
+      <a href="#/my-term-6"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-6">My Term 6</a>
+   </li>
+   <li>
+      <a href="#/my-term-7"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-7">My Term 7</a>
+   </li>
+   <li>
+      <a href="#/my-term-8"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-8">My Term 8</a>
+   </li>
+   <li>
+      <a href="#/my-term-9"
+         title="https://w3id.org/my-namespace/my-vocabulary/my-term-9">My Term 9</a>
+   </li>
+   <li>
+      <a href="#" title="https://w3id.org/my-namespace/my-vocabulary">
+         <span>my vocabulary</span>
+      </a>
+   </li>
+</ul>
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Template Controlled Vocabulary classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Template Controlled Vocabulary.
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#/my-term-1"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-1">My Term 1</a>
+      </li>
+      <li>
+         <a href="#/my-term-10"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-10">My Term 10</a>
+      </li>
+      <li>
+         <a href="#/my-term-11"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-11">My Term 11</a>
+      </li>
+      <li>
+         <a href="#/my-term-12"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-12">My Term 12</a>
+      </li>
+      <li>
+         <a href="#/my-term-13"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-13">My Term 13</a>
+      </li>
+      <li>
+         <a href="#/my-term-14"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-14">My Term 14</a>
+      </li>
+      <li>
+         <a href="#/my-term-15"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-15">My Term 15</a>
+      </li>
+      <li>
+         <a href="#/my-term-16"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-16">My Term 16</a>
+      </li>
+      <li>
+         <a href="#/my-term-17"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-17">My Term 17</a>
+      </li>
+      <li>
+         <a href="#/my-term-18"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-18">My Term 18</a>
+      </li>
+      <li>
+         <a href="#/my-term-19"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-19">My Term 19</a>
+      </li>
+      <li>
+         <a href="#/my-term-2"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-2">My Term 2</a>
+      </li>
+      <li>
+         <a href="#/my-term-20"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-20">My Term 20</a>
+      </li>
+      <li>
+         <a href="#/my-term-21"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-21">My Term 21</a>
+      </li>
+      <li>
+         <a href="#/my-term-22"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-22">My Term 22</a>
+      </li>
+      <li>
+         <a href="#/my-term-23"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-23">My Term 23</a>
+      </li>
+      <li>
+         <a href="#/my-term-24"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-24">My Term 24</a>
+      </li>
+      <li>
+         <a href="#/my-term-3"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-3">My Term 3</a>
+      </li>
+      <li>
+         <a href="#/my-term-4"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-4">My Term 4</a>
+      </li>
+      <li>
+         <a href="#/my-term-5"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-5">My Term 5</a>
+      </li>
+      <li>
+         <a href="#/my-term-6"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-6">My Term 6</a>
+      </li>
+      <li>
+         <a href="#/my-term-7"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-7">My Term 7</a>
+      </li>
+      <li>
+         <a href="#/my-term-8"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-8">My Term 8</a>
+      </li>
+      <li>
+         <a href="#/my-term-9"
+            title="https://w3id.org/my-namespace/my-vocabulary/my-term-9">My Term 9</a>
+      </li>
+      <li>
+         <a href="#" title="https://w3id.org/my-namespace/my-vocabulary">
+            <span>my vocabulary</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="/my-term-1">
+      <h3>My Term 1<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-1</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-10">
+      <h3>My Term 10<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-10</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-11">
+      <h3>My Term 11<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-11</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-12">
+      <h3>My Term 12<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-12</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-13">
+      <h3>My Term 13<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-13</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-14">
+      <h3>My Term 14<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-14</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-15">
+      <h3>My Term 15<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-15</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-16">
+      <h3>My Term 16<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-16</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-17">
+      <h3>My Term 17<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-17</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-18">
+      <h3>My Term 18<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-18</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-19">
+      <h3>My Term 19<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-19</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-2">
+      <h3>My Term 2<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-2</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-20">
+      <h3>My Term 20<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-20</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-21">
+      <h3>My Term 21<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-21</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-22">
+      <h3>My Term 22<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-22</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-23">
+      <h3>My Term 23<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-23</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-24">
+      <h3>My Term 24<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-24</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-3">
+      <h3>My Term 3<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-3</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-4">
+      <h3>My Term 4<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-4</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-5">
+      <h3>My Term 5<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-5</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-6">
+      <h3>My Term 6<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-6</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-7">
+      <h3>My Term 7<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-7</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-8">
+      <h3>My Term 8<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-8</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/my-term-9">
+      <h3>My Term 9<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary/my-term-9</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#Concept"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="">
+      <h3>my vocabulary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/my-namespace/my-vocabulary</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
