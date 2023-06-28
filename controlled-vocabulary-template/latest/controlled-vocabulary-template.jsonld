@@ -35,7 +35,7 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@language" : "en",
@@ -70,443 +70,443 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/1.0.0"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
     "@value" : "1.0.0"
   } ],
   "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-1"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-10"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-11"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-11"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-12"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-12"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-13"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-13"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-14"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-14"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-15"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-15"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-16"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-16"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-17"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-17"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-18"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-18"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-19"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-19"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-2"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-2"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-20"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-20"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-21"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-21"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-22"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-22"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-23"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-23"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-24"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-24"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-3"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-3"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-4"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-4"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-5"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-5"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-6"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-6"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-7"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-7"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-8"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-8"
   }, {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-9"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-9"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-1",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 1"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-10",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 10"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-11",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-11",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 11"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-12",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-12",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 12"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-13",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-13",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 13"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-14",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-14",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 14"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-15",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-15",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 15"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-16",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-16",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 16"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-17",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-17",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 17"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-18",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-18",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 18"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-19",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-19",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 19"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-2",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 2"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-20",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-20",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 20"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-21",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-21",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 21"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-22",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-22",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 22"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-23",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-23",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 23"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-24",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-24",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 24"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-3",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 3"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-4",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-4",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 4"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-5",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-5",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 5"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-6",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-6",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 6"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-7",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-7",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 7"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-8",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-8",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 8"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 }, {
-  "@id" : "https://w3id.org/my-namespace/my-vocabulary/my-term-9",
+  "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-9",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "My Term 9"
   } ],
   "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
-    "@id" : "https://w3id.org/my-namespace/my-vocabulary"
+    "@id" : "https://w3id.org/my-namespace/controlled-vocabulary-template"
   } ]
 } ]

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RELEASE="$1"
-VOCABULARY="my-vocabulary"
+VOCABULARY="controlled-vocabulary-template"
 
 if [ "$RELEASE" = "" ]; then
     echo "Provide a version number x.y.z"
