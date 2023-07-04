@@ -33,6 +33,9 @@ else
 		sed -i 's/ontology.'$EXT'/'$VOCABULARY'.'$EXT'/g' './'$VOCABULARY'/latest/index.html'
 	done
 
+	# Keep both extensions for rdf/xml
+	cp './'$VOCABULARY'/latest/'$VOCABULARY'.owl' './'$VOCABULARY'/latest/'$VOCABULARY'.rdf'
+	
 	rm './'$VOCABULARY'/latest/'*'.md'
 	cp -r './'$VOCABULARY'/latest/'* './'$VOCABULARY'/'$RELEASE
 fi
