@@ -27,10 +27,12 @@ else
 
 	# Move files
 	mv './'$VOCABULARY'/latest/index-en.html' './'$VOCABULARY'/latest/index.html'
-	mv './'$VOCABULARY'/latest/ontology.jsonld' './'$VOCABULARY'/latest/'$VOCABULARY'.jsonld'
-	mv './'$VOCABULARY'/latest/ontology.nt' './'$VOCABULARY'/latest/'$VOCABULARY'.nt'
-	mv './'$VOCABULARY'/latest/ontology.owl' './'$VOCABULARY'/latest/'$VOCABULARY'.owl'
-	mv './'$VOCABULARY'/latest/ontology.ttl' './'$VOCABULARY'/latest/'$VOCABULARY'.ttl'
+
+	for EXT in "jsonld" "nt" "owl" "ttl" ; do
+		mv './'$VOCABULARY'/latest/ontology.'$EXT './'$VOCABULARY'/latest/'$VOCABULARY'.'$EXT
+		sed -i 's/ontology.'$EXT'/'$VOCABULARY'.'$EXT'/g' './'$VOCABULARY'/latest/index.html'
+	done
+
 	rm './'$VOCABULARY'/latest/'*'.md'
 	cp -r './'$VOCABULARY'/latest/'* './'$VOCABULARY'/'$RELEASE
 fi
