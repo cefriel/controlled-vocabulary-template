@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/my-namespace/controlled-vocabulary-template#"
+     xml:base="https://w3id.org/my-namespace/controlled-vocabulary-template"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template">
+        <owl:versionIRI rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/1.0.0"/>
+        <terms:contributor xml:lang="en">Name Surname (Affiliation)</terms:contributor>
+        <terms:contributor xml:lang="en">OtherName OtherSurname (OtherAffiliation)</terms:contributor>
+        <terms:creator xml:lang="en">Name Surname (Affiliation)</terms:creator>
+        <terms:creator xml:lang="en">OtherName OtherSurname (OtherAffiliation)</terms:creator>
+        <terms:description xml:lang="en">Template for generating a controlled vocabulary defined under a certain my-namespace.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher xml:lang="en">Publisher</terms:publisher>
+        <terms:title xml:lang="en">Template Controlled Vocabulary</terms:title>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-11"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-12"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-13"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-14"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-15"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-16"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-17"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-18"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-19"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-2"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-20"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-21"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-22"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-23"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-24"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-3"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-4"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-5"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-6"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-7"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-8"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-9"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 1</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 10</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-11">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 11</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-12 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-12">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 12</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-13 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-13">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 13</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-14 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-14">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 14</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-15 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-15">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 15</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-16 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-16">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 16</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-17 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-17">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 17</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-18 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-18">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 18</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-19 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-19">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 19</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 2</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-20 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-20">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 20</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-21 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-21">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 21</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-22 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-22">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 22</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-23 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-23">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 23</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-24 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-24">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 24</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 3</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-4">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 4</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-5">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 5</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-6">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 6</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-7">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 7</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-8">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 8</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-9">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+        <skos:prefLabel xml:lang="en">My Term 9</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/my-namespace/controlled-vocabulary-template"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
