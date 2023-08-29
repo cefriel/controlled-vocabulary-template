@@ -19,3 +19,12 @@ Download release JAR from [here](https://github.com/dgarijo/Widoco/releases) and
 3. Execute the `sh run.sh x.y.z` script providing as argument the correct version number. The version number should be the same declared in the Excel file.
 
 4. Git commit and push
+
+## Additional notes
+
+- If the taxonomy has more than one level, the `skos-play-cli` tool ([link](https://github.com/sparna-git/skos-play)) can be used to generate a hierarchical visualisation of the taxonomy through the following command:
+```bash
+java -jar ./tools/skos-play-cli.jar hierarchical -i ./controlled-vocabulary-template/controlled-vocabulary-template.ttl -o ./controlled-vocabulary-template/hierarchy.html -f html -l en
+```
+The generated file should be manually added to or referred from the Widoco documentation.
+
