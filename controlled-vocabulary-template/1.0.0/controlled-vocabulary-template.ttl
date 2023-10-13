@@ -16,6 +16,7 @@
                                                                 <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                                 <http://purl.org/dc/terms/publisher> "Publisher"@en ;
                                                                 <http://purl.org/dc/terms/title> "Template Controlled Vocabulary"@en ;
+                                                                <http://purl.org/ontology/bibo/status> "Draft Controlled Vocabulary"@en ;
                                                                 owl:versionInfo "1.0.0"@en ;
                                                                 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1> ,
                                                                                                                     <https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10> ,
@@ -68,6 +69,10 @@
 
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#hasTopConcept

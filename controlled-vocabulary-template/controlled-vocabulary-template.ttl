@@ -24,6 +24,7 @@
   dct:license <https://creativecommons.org/licenses/by/4.0/>;
   dct:publisher "Publisher"@en;
   dct:title "Template Controlled Vocabulary"@en;
+  <http://purl.org/ontology/bibo/status> "Draft Controlled Vocabulary"@en;
   owl:versionIRI <https://w3id.org/my-namespace/controlled-vocabulary-template/1.0.0>;
   owl:versionInfo "1.0.0"@en;
   skos:hasTopConcept <https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1>,

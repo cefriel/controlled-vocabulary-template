@@ -8,6 +8,7 @@
 <https://w3id.org/my-namespace/controlled-vocabulary-template> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/my-namespace/controlled-vocabulary-template> <http://purl.org/dc/terms/publisher> "Publisher"@en .
 <https://w3id.org/my-namespace/controlled-vocabulary-template> <http://purl.org/dc/terms/title> "Template Controlled Vocabulary"@en .
+<https://w3id.org/my-namespace/controlled-vocabulary-template> <http://purl.org/ontology/bibo/status> "Draft Controlled Vocabulary"@en .
 <https://w3id.org/my-namespace/controlled-vocabulary-template> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
 <https://w3id.org/my-namespace/controlled-vocabulary-template> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-1> .
 <https://w3id.org/my-namespace/controlled-vocabulary-template> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/my-namespace/controlled-vocabulary-template/my-term-10> .
@@ -59,6 +60,9 @@
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#hasTopConcept
 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
